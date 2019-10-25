@@ -24,8 +24,6 @@
   right: 80px;
   bottom: 116px;
   text-align: right;
-  color: #FFFFFF;
-  text-transform: uppercase;
 }
 
 .slider-item__info-subtitle {
@@ -68,7 +66,6 @@
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  color: #FFFFFF;
   .slick-current {
     .dots-box{
       border-top: 4px solid $green;
@@ -92,8 +89,126 @@
   &__name {
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
+
+.header__title {
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 156px;
+  opacity: 0.07;
+  max-width: 467px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.header__aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-right: 1px solid rgba(#fff, .25);
+  height: 100vh;
+  text-align: center;
+}
+
+.menu {
+  padding-top: 40px;
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3px;
+    padding-top: 6px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+}
+
+.header__search {
+  padding: 15px 0 35px;
+}
+
+.header__date {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 64px;
+  span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    display: block;
+  }
+}
+
+.header__location{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  position: relative;
+  padding-left: 19px;
+  text-transform: capitalize;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    background-image: url("../img/marker.svg");
+    left: 0;
+    top: 0;
+  }
+}
+
+.header__map{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.header__arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 210px;
+  z-index: 3;
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 5s infinite 6s;
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.surf {
+  padding: 160px 0 210px;
+  background-image: url("../img/surf-bg.png");
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+.surf__subtitle {
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
+}
+
 
 
 

@@ -9,6 +9,7 @@
   "author": "Vadim Prokopchuk",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.7.2",
     "browser-sync": "^2.26.5",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
