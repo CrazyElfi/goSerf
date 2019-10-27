@@ -75,8 +75,8 @@ gulp.task('export', function(){
   let BuildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'))
 
-  let BuildImg = gulp.src('app/images/**/*.*')
-    .pipe(gulp.dest('dist/images'))
+  let BuildImg = gulp.src('app/img/**/*.*')
+    .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task('watch', function() {
